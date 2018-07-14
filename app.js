@@ -7,9 +7,9 @@ const https = require('https');
 const http = require('http');
 
 // function to poke the heroku server
-setInterval(function() {
-    http.request('https://greve-chocolatine-34680.herokuapp.com/', console.log("server poked")).end();
-}, 300000); // every 5 minutes (300000)
+// setInterval(function() {
+//     http.request('https://greve-chocolatine-34680.herokuapp.com/', console.log("server poked")).end();
+// }, 300000); // every 5 minutes (300000)
 
 var exphbs = require('express-handlebars');
 app.set('views', path.join(__dirname, 'views'));
