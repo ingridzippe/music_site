@@ -30,7 +30,7 @@ body, html {
   	padding-top: 166px;
   	margin-left: 20%;
 }
-.betternowmvid {
+.content-container {
 	width: 500px;
 	z-index: 1;
 }
@@ -42,7 +42,7 @@ body, html {
 	font-weight: 900;
 	z-index: 1;
 }
-.aug {
+.release-date {
 	display: block;
 	float: left;
 	font-family: Akzidenz;
@@ -50,7 +50,7 @@ body, html {
 	font-weight: 900;
 	margin-top: 2px;
 }
-.mvid {
+.music-video {
 	float: left;
 	width: 430px;
 	padding-top: 11px;
@@ -63,7 +63,7 @@ body, html {
 	float: left;
 	margin-top: 0px;
 }
-.demo {
+.clock-number {
 	float: left;
   	width: 80px;
     font-family: Akzidenz-Italic-2;
@@ -75,7 +75,7 @@ body, html {
   	border-radius: 13px;
   	color: #fff;
 }
-.demo:after {
+.clock-number:after {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -86,7 +86,7 @@ body, html {
 	filter: blur(15px);
 	border: 1px solid #ff0;
 }
-.demo:before {
+.clock-number:before {
 	border: 1px solid #f00;
 	content: '';
 	position: absolute;
@@ -97,10 +97,10 @@ body, html {
 	opacity: .5;
 	filter: blur(40px);
 }
-.yellow {
+.clock-unit {
 	float: left;
 	height: 112px;
-  	width: 55px;
+  	width: 58.3px;
   	padding: 0 15px;
   	margin-top: 10px;
   	margin-right: 20px;
@@ -109,7 +109,7 @@ body, html {
   	text-align: center;
   	box-shadow: 30px 20px 400px #e9cf7e;
 }
-.label {
+.clock-label {
 	position: absolute;
 	text-align: center;
 	height: 0px;
@@ -131,11 +131,11 @@ body, html {
 	margin-left: -10px;
 	margin-right: -10px;
 }
-.center {
+.album-container {
 	width: 820px;
 	margin: auto;
 }
-.bandbtitle {
+.bb-title {
 	float: left;
 	text-align: left;
 	width: 500px;
@@ -159,7 +159,7 @@ body, html {
 .streaming-on {
 	margin-left: 70px;
 }
-.bbcover {
+.bb-cover {
 	display: block;
 	float: left;
 	width: 400px;
@@ -192,7 +192,7 @@ a {
 	text-decoration: none;
 	color: #000;
 }
-.social-media-vertical {
+.social-media {
   	position: absolute;
     height: 340px;
     width: 40px;
@@ -200,7 +200,7 @@ a {
   	right: 28px;
     text-align: center;	
 }
-.icon-vertical {
+.icon {
 	height: 30px;
 	width: 35px;
 	margin-top: 20px;
@@ -208,7 +208,7 @@ a {
 	text-align: center;
 	color: #fff;
 }
-.icon-vertical:hover {
+.icon:hover {
 	color: #000;
 	opacity: 0.9;
 }
@@ -272,7 +272,7 @@ a {
 	margin-right: 0;
 	text-align: center;
 }
-.social-media-vertical {
+.social-media {
   	position: absolute;
     height: 40px;
     width: 253px;
@@ -282,7 +282,7 @@ a {
 	margin-right: auto;
   	top: 5px;
 }
-.icon-vertical {
+.icon {
 	float: left;
 	height: 30px;
 	width: 30px;
@@ -293,19 +293,19 @@ a {
 .name {
 	padding-top: 130px;
 }
-.betternowmvid {
+.content-container {
 	width: 100%;
 	text-align: center;
 	z-index: 1;
 	color: #fff;
 }
-.betternow, .aug, .mvid {
+.betternow, .release-date, .music-video {
 	clear: both;
 	width: 100%;
 }
 .betternow { font-size: 38px; }
-.aug { font-size: 68px; }
-.mvid {
+.release-date { font-size: 68px; }
+.music-video {
 	font-size: 19px;
 	margin-left: 10px;
 }
@@ -318,7 +318,7 @@ a {
 	left: 0;
 	padding-top: 190px;
 }
-.yellow {
+.clock-unit {
 	float: left;
   	width: 50px;
   	margin-left: 7px;
@@ -329,8 +329,8 @@ a {
 #min { padding-left: 6px; }
 #sec { padding-left: 7px; }
 .album { height: 1300px; }
-.center { width: 100%; }
-.bandbtitle {
+.album-container { width: 100%; }
+.bb-title {
 	width: 100%;
 	text-align: center;
 }
@@ -349,7 +349,7 @@ a {
 	margin-top: 50px;
 	text-align: center;
 }
-.bbcover, .embed, .dropdown, .dropdown-btn {
+.bb-cover, .embed, .dropdown, .dropdown-btn {
 	clear: both;
 	float: none;
 	display: block;

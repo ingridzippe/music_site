@@ -7,50 +7,49 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<!-- {{> main}} -->
 	<div class="background-image">
 		<div class="name">post malone</div>
 		<div class="content">
-			<div class="betternowmvid">
+			<div class="content-container">
 	    		<div class="betternow">BETTER NOW</div>
-				<div class="mvid">MUSIC VIDEO</div>
+				<div class="music-video">MUSIC VIDEO</div>
 			</div>
-			<div class="aug">AUG 20</div>
+			<div class="release-date">AUG 20</div>
 		  	<div class="clock">
-			  	<div class="yellow">
-			  		<p class="demo" id="days"></p>
-			  		<div class="label" id="day">days</div>
+			  	<div class="clock-unit">
+			  		<p class="clock-number" id="days"></p>
+			  		<div class="clock-label" id="day">days</div>
 			  	</div>
-			  	<div class="yellow">
-			  		<p class="demo" id="hours"></p>
-			  		<div class="label" id="hr">hours</div>
+			  	<div class="clock-unit">
+			  		<p class="clock-number" id="hours"></p>
+			  		<div class="clock-label" id="hr">hours</div>
 			  	</div>
-			  	<div class="yellow">
-			  		<p class="demo" id="minutes"></p>
-			  		<div class="label" id="min">mins</div>
+			  	<div class="clock-unit">
+			  		<p class="clock-number" id="minutes"></p>
+			  		<div class="clock-label" id="min">mins</div>
 			  	</div>
-			  	<div class="yellow">
-			  		<p class="demo" id="seconds"></p>
-			  		<div class="label" id="sec">secs</div>
+			  	<div class="clock-unit">
+			  		<p class="clock-number" id="seconds"></p>
+			  		<div class="clock-label" id="sec">secs</div>
 			  	</div>
 			</div>
   		</div>
-	   	<div class="social-media-vertical">
-	  		<a href="https://www.facebook.com/postmalone/" target="_blank"><i id="facebook" class="icon-vertical fab fa-facebook-f"></i></a>
-	  		<a href="https://twitter.com/postmalone?lang=en" target="_blank"><i id="twitter" class="icon-vertical fab fa-twitter"></i></a>
-	  		<a href="https://www.instagram.com/postmalone/?hl=en" target="_blank"><i id="instagram" class="icon-vertical fab fa-instagram"></i></a>
-	  		<a href="https://www.youtube.com/user/postmalone" target="_blank"><i id="youtube" class="icon-vertical fab fa-youtube"></i></a>
-	  		<a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target="_blank"><i id="spotify" class="icon-vertical fab fa-spotify"></i></a>
-	  		<a href="https://itunes.apple.com/us/album/beerbongs-bentleys/1373516902" target="_blank"><i id="apple" class="icon-vertical fab fa-apple"></i></a>
+	   	<div class="social-media">
+	  		<a href="https://www.facebook.com/postmalone/" target="_blank"><i id="facebook" class="icon fab fa-facebook-f"></i></a>
+	  		<a href="https://twitter.com/postmalone?lang=en" target="_blank"><i id="twitter" class="icon fab fa-twitter"></i></a>
+	  		<a href="https://www.instagram.com/postmalone/?hl=en" target="_blank"><i id="instagram" class="icon fab fa-instagram"></i></a>
+	  		<a href="https://www.youtube.com/user/postmalone" target="_blank"><i id="youtube" class="icon fab fa-youtube"></i></a>
+	  		<a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target="_blank"><i id="spotify" class="icon fab fa-spotify"></i></a>
+	  		<a href="https://itunes.apple.com/us/album/beerbongs-bentleys/1373516902" target="_blank"><i id="apple" class="icon fab fa-apple"></i></a>
 	  	</div>
 	</div>
   	<div class="album">
-  		<div class="center">
-	  		<div class="bandbtitle">BEERBONGS & BENTLEYS</div>
+  		<div class="album-container">
+	  		<div class="bb-title">BEERBONGS & BENTLEYS</div>
 	  		<div class="half">
 	  			<div class="bb-type">ALBUM OUT NOW:</div>
 	  			<a href="https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR" target="_blank">
-	  				<div class="bbcover"></div>
+	  				<div class="bb-cover"></div>
 	  				<div class="hover"></div>
 	  			</a>
 	  		</div>
@@ -78,12 +77,9 @@
   		</div>
   	</div>
 
-
   	<div class="background-image-bottom">
-  		  	<div class="copyright">COPYRIGHT POST MALONE AND UNIVERSAL MUSIC GROUP © </div>
+  		<div class="copyright">COPYRIGHT POST MALONE AND UNIVERSAL MUSIC GROUP © </div>
   	</div>
-
-
 
   	<script>
 		// release date
@@ -99,12 +95,6 @@
 	    	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	    	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	    	var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
-	    	// show output in the div with id 'demo'
-	    	// document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-	    	// + minutes + "m " + seconds + "s ";
-
-	    	// document.getElementById("demo").innerHTML = days + " . " + hours + " . " + minutes + " . " + seconds;
-
 	    	document.getElementById("days").innerHTML = days;
 			document.getElementById("hours").innerHTML = hours;
 			document.getElementById("minutes").innerHTML = minutes;
@@ -113,40 +103,12 @@
 	    	// if count down is over
 	    	if (distance < 0) {
 	        	clearInterval(x);
-	        	document.getElementById("demo").innerHTML = "EXPIRED";
+	        	document.getElementById("days").innerHTML = 0;
+				document.getElementById("hours").innerHTML = 0;
+				document.getElementById("minutes").innerHTML = 0;
+				document.getElementById("seconds").innerHTML = 0;
 	    	}
 		}, 1000);
-
-		// var change = "#1f1e1d";
-		var change = "#ffe801";
-
-		$(window).scroll(function () {
-		    // console.log("I " + $(".icon-vertical").offset().top);
-		    // console.log($(".album").offset().top - 30);
-
-		    var fb = $("#facebook").offset().top;
-		    var tw = $("#twitter").offset().top;
-		    var insta = $("#instagram").offset().top;
-		    var you = $("#youtube").offset().top;
-		    var sp = $("#spotify").offset().top;
-		    var ap = $("#apple").offset().top;
-		    var alt = $(".album").offset().top - 30;
-		    var alb = 1780;
-
-		    // if (fb < alt || fb > alb) { $("#facebook").css("color", "#000"); } else { $("#facebook").css("color", change); }
-		    // if (tw < alt || tw > alb) { $("#twitter").css("color", "#000"); } else { $("#twitter").css("color", change); }
-		    // if (insta < alt || insta > alb) { $("#instagram").css("color", "#000"); } else { $("#instagram").css("color", change); }
-		    // if (you < alt || you > alb) { $("#youtube").css("color", "#000"); } else { $("#youtube").css("color", change); }
-		    // if (sp < alt || sp > alb) { $("#spotify").css("color", "#000"); } else { $("#spotify").css("color", change); }
-		    // if (ap < alt || ap > alb) { $("#apple").css("color", "#000"); } else { $("#apple").css("color", change); }
-
-		    // if ($("#facebook").offset().top < 1503) { $("#facebook").css("color", change); } else { $("#facebook").css("color", "#000"); }
-		    // if ($("#twitter").offset().top < 1503) { $("#twitter").css("color", change); } else { $("#twitter").css("color", "#000"); }
-		    // if ($("#instagram").offset().top > 1503) { $("#instagram").css("color", change); } else { $("#instagram").css("color", "#000"); }
-		    // if ($("#youtube").offset().top < 1503) { $("#youtube").css("color", change); } else { $("#youtube").css("color", "#000"); }
-		    // if ($("#spotify").offset().top < 1503) { $("#spotify").css("color", change); } else { $("#spotify").css("color", "#000"); }
-		    // if ($("#apple").offset().top < 1503) { $("#apple").css("color", change); } else { $("#apple").css("color", "#000"); }
-		});
 	</script>
 
 </body>
