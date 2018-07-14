@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body, html {
+  	background-color: #000;
+  	color: #fff;
+  	height: 100%;
+}
+.background-image {
+	height: 100%;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -50px;
+    background-image: url("photos/malone_top.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+.name {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	padding-top: 87px;
+	font-family: "Stoney";
+	font-size: 38px;
+}
+.content {
+    width: 700px;
+  	text-align: left;
+  	padding-top: 166px;
+  	margin-left: 20%;
+}
+.betternowmvid {
+	width: 500px;
+	z-index: 1;
+}
+.betternow {
+	float: left;
+	width: 450px;
+	font-family: Akzidenz;
+	font-size: 50px;
+	font-weight: 900;
+	z-index: 1;
+}
+.aug {
+	display: block;
+	float: left;
+	font-family: Akzidenz;
+	font-size: 90px;
+	font-weight: 900;
+	margin-top: 2px;
+}
+.mvid {
+	float: left;
+	width: 430px;
+	padding-top: 11px;
+	letter-spacing: 14.3px;
+	font-family: Akzidenz;
+	font-weight: 900;
+	font-size: 32px;
+}
+.clock {
+	float: left;
+	margin-top: 0px;
+}
+.demo {
+	float: left;
+  	width: 80px;
+    font-family: Akzidenz-Italic-2;
+  	font-size: 36px;
+  	padding: 0 15px;
+  	margin-top: 18px;
+  	margin-right: 0px;
+  	margin-left: -28px;
+  	border-radius: 13px;
+  	color: #fff;
+}
+.demo:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	color: #f9df00;
+	z-index: -1;
+	filter: blur(15px);
+	border: 1px solid #ff0;
+}
+.demo:before {
+	border: 1px solid #f00;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f9df00;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+.yellow {
+	float: left;
+	height: 112px;
+  	width: 55px;
+  	padding: 0 15px;
+  	margin-top: 10px;
+  	margin-right: 20px;
+  	border-radius: 14px;
+    font-size: 33px;
+  	text-align: center;
+  	box-shadow: 30px 20px 400px #e9cf7e;
+}
+.label {
+	position: absolute;
+	text-align: center;
+	height: 0px;
+	margin: auto;
+	padding-top: 65px;
+	font-family: "Akzidenz-Italic";
+	font-size: 20px;
+	z-index: 1;
+	color: #fff;
+}
+#day { padding-left: 8px; }
+#hr { padding-left: 5px; }
+#min { padding-left: 8px; }
+#sec { padding-left: 10px; }
+.album {
+	height: 910px;
+	background-color: #000;
+	text-align: center;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.center {
+	width: 820px;
+	margin: auto;
+}
+.bandbtitle {
+	float: left;
+	text-align: left;
+	width: 500px;
+	height: 80px;
+	margin-top: 72px;
+	font-family: "Akzidenz-Italic-2";
+	font-size: 22px;
+}
+.half {
+	float: left;
+	width: 50%;
+}
+.streaming-on, .bb-type {
+	float: left;
+	text-align: left;
+	color: #fff;
+	font-family: Akzidenz;
+	font-size: 17px;
+	margin-bottom: 13px;
+}
+.streaming-on {
+	margin-left: 70px;
+}
+.bbcover {
+	display: block;
+	float: left;
+	width: 400px;
+	height: 380px;
+	background: url("photos/malone_albumcover.jpg") no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.hover {
+	position: relative;
+	width: 400px;
+	height: 380px;
+  	top: 33px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background-color: #ffe801;
+  	z-index: 2;
+    opacity: 0.0;
+}
+.hover:hover {
+	opacity: 0.2;
+}
+.embed {
+	float: left;
+	position: relative;
+	margin-left: 70px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.social-media-vertical {
+  	position: absolute;
+    height: 340px;
+    width: 40px;
+  	top: 180px;
+  	right: 28px;
+    text-align: center;	
+}
+.icon-vertical {
+	height: 30px;
+	width: 35px;
+	margin-top: 20px;
+	font-size: 31px;
+	text-align: center;
+	color: #fff;
+}
+.icon-vertical:hover {
+	color: #000;
+	opacity: 0.9;
+}
+.dropdown {
+	float: left;
+	width: 60%;
+	padding-top: 40px;
+	text-align: left;
+}
+.dropdown-btn {
+    font-family: "Akzidenz-Italic-2";
+    font-size: 62px;
+    font-size: 50px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding: 27px 16px;
+    font-family: Akzidenz-Italic-2;
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn { background-color: #3e8e41; }
+.background-image-bottom {
+	height: 95%;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -50px;
+    text-align: center;	
+    background-image: url("photos/malone_bottom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+.copyright {
+	position: relative;
+	bottom: -90%;
+	font-family: Akzidenz-Italic;
+	font-size: 22px;
+}
+
+/*Small Screen Size*/
+@media screen and (max-width: 800px) {
+.content {
+	width: 100%;
+	padding-top: 90px;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+.social-media-vertical {
+  	position: absolute;
+    height: 40px;
+    width: 253px;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+  	top: 5px;
+}
+.icon-vertical {
+	float: left;
+	height: 30px;
+	width: 30px;
+	margin-left: 7px;
+	margin-right: 5px;
+	font-size: 30px;
+}
+.name {
+	padding-top: 130px;
+}
+.betternowmvid {
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	color: #fff;
+}
+.betternow, .aug, .mvid {
+	clear: both;
+	width: 100%;
+}
+.betternow { font-size: 38px; }
+.aug { font-size: 68px; }
+.mvid {
+	font-size: 19px;
+	margin-left: 10px;
+}
+.clock {
+	position: absolute;
+	width: 376px;
+    margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+	padding-top: 190px;
+}
+.yellow {
+	float: left;
+  	width: 50px;
+  	margin-left: 7px;
+  	margin-right: 7px;
+}
+#day { padding-left: 6px; }
+#hr { padding-left: 3px; }
+#min { padding-left: 6px; }
+#sec { padding-left: 7px; }
+.album { height: 1300px; }
+.center { width: 100%; }
+.bandbtitle {
+	width: 100%;
+	text-align: center;
+}
+.half { width: 100%; }
+.streaming-on, .bb-type {
+	float: left;
+	width: 100%;
+	margin-bottom: 13px;
+	font-family: Akzidenz;
+	font-size: 17px;
+	text-align: center;
+}
+.streaming-on {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 50px;
+	text-align: center;
+}
+.bbcover, .embed, .dropdown, .dropdown-btn {
+	clear: both;
+	float: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.hover { display: none; }
+.dropdown { text-align: center; }
+.dropdown-btn {
+	font-size: 40px;
+	text-align: center;
+}
+}
+
+
+@font-face {
+	font-family: "Stoney";
+	src: url("fonts/PLANK___.TTF");
+}
+@font-face {
+	font-family: "Digital";
+	src: url("fonts/digital-7.ttf");
+}
+@font-face {
+	font-family: "Akzidenz";
+	src: url("fonts/akzidenzgroteskbe-mdex.otf");
+}
+@font-face {
+	font-family: "Akzidenz-Italic";
+	src: url("fonts/AkzidenzGroteskBEExBoldItalic.otf");
+}
+@font-face {
+	font-family: "Akzidenz-Italic-2";
+	src: url("fonts/AkzidenzGroteskBoldExtendedItalic.otf");
+}
+@font-face {
+	font-family: "Eurostile";
+	src: url("fonts/EurostileExtendedBlack.ttf");
+}
+@font-face {
+	font-family: "EurostileBold";
+	src: url("fonts/EurostileBoldExtended.otf");
+}
+@font-face {
+	font-family: "Compacta";
+	src: url("fonts/Compacta.otf");
+}
