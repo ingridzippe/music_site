@@ -264,7 +264,8 @@ a {
 }
 
 /*Small Screen Size*/
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {*/
+@media only screen and (max-width: 810px) {
 .content {
 	width: 100%;
 	padding-top: 90px;
