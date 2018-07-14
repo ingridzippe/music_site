@@ -268,11 +268,11 @@ a {
 @media only screen and (max-width: 810px) {
 .background-image {
 	height: 800px;
-	background-size: 40%;
+	background-size: 100% auto;
 	background-position: 50% 50%;
 }
 .background-image-bottom {
-	background-size: 40%;
+	background-size: 100% auto;
 	background-position: 50% 50%;
 }
 .content {
