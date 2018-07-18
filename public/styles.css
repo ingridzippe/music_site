@@ -242,8 +242,8 @@ a {
 .dropdown-content a:hover {
 	background-color: #ddd;
 }
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn { background-color: #3e8e41; }
+/*.dropdown:hover .dropdown-content {display: block;}*/
+/*.dropdown:hover .dropbtn { background-color: #3e8e41; }*/
 .background-image-bottom {
 	height: 95%;
 	margin-left: -10px;
