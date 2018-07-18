@@ -368,6 +368,9 @@ a {
 }
 .hover { display: none; }
 .dropdown { text-align: center; }
+.dropdown-content {
+	width: 60%;
+}
 .dropdown-btn {
 	font-size: 40px;
 	text-align: center;
