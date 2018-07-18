@@ -376,16 +376,17 @@ a {
 
 /*Mobile Screen Size*/
 /*@media screen and (max-width: 800px) {*/
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 .background-image {
-	height: 800px;
-	/*background-size: contain;*/
-	background-size: 50%;
+	max-width: 100%; 
+	display:block; 
+	height: auto;
 	background-position: 50% 50%;
 }
 .background-image-bottom {
-	/*background-size: contain;*/
-	background-size: 50%;
+	max-width: 100%; 
+	display:block; 
+	height: auto;
 	background-position: 50% 50%;
 }	
 .copyright {
