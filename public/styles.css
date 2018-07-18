@@ -376,7 +376,7 @@ a {
 
 /*Mobile Screen Size*/
 /*@media screen and (max-width: 800px) {*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 .background-image {
 	height: 800px;
 	background-size: 100% auto;
