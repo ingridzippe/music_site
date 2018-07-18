@@ -378,12 +378,20 @@ a {
 /*@media screen and (max-width: 800px) {*/
 @media all and (max-width: 450px) {
 .background-image {
-	background-size: contain;
-	background-position: 50% 50%;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -50px;
+    background-size: cover;
+    background-position: 0% 0%;
 }
 .background-image-bottom {
-	background-size: contain;
-	background-position: 50% 50%;
+	height: 95%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+    background-size: cover;
+    background-position: 0% 0%;
 }	
 .copyright {
 	color: #fff;
