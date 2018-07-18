@@ -379,12 +379,13 @@ a {
 @media only screen and (max-width: 450px) {
 .background-image {
 	height: 800px;
-	background-size: contain;
+	/*background-size: contain;*/
+	background-size: 50%;
 	background-position: 50% 50%;
 }
 .background-image-bottom {
 	/*background-size: contain;*/
-	background-size: auto 100%;
+	background-size: 50%;
 	background-position: 50% 50%;
 }	
 .copyright {
