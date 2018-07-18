@@ -382,7 +382,7 @@ a {
 	background-position: 50% 50%;
 }
 .background-image-bottom {
-	background-size: contain;
+	background-size: cover;
 	background-position: 50% 50%;
 }	
 .copyright {
