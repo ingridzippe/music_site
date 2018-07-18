@@ -378,15 +378,15 @@ a {
 /*@media screen and (max-width: 800px) {*/
 @media all and (max-width: 450px) {
 .background-image {
-	background-size: 50%;
+	background-size: contain;
 	background-position: 50% 50%;
 }
 .background-image-bottom {
-	background-size: cover;
+	background-size: contain;
 	background-position: 50% 50%;
 }	
 .copyright {
-	color: #ff0;
+	color: #fff;
 }
 }
 
