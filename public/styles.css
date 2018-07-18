@@ -382,7 +382,7 @@ a {
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-top: -50px;
-    background-size: cover;
+    background-size: contain;
     background-position: 0% 0%;
 }
 .background-image-bottom {
@@ -390,7 +390,7 @@ a {
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-top: 0px;
-    background-size: 100%;
+    background-size: contain;
     background-position: 0% 0%;
 }	
 .copyright {
